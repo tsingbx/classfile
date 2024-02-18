@@ -1,0 +1,13 @@
+get "/p/:id", ctx => {
+	ctx.yap "article/article", {
+		"id": ctx.param("id"),
+	}
+}
+
+get "/index/:n", ctx => {
+	ctx.yap "index", {
+		"name": ctx.param("n"),
+	}
+}
+
+run ":8888"
