@@ -4,6 +4,8 @@ static "/"
 get "/p/:id", ctx => {
 	ctx.json {
 		"id": ctx.param("id"),
+		"title": "hello",
+		"author": "tsingbx",
 	}
 }
 /*

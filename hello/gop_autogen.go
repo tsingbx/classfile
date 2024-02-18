@@ -18,12 +18,12 @@ func (this *hello) MainEntry() {
 //line hello/hello_yap.gox:4:1
 	this.Get("/p/:id", func(ctx *yap.Context) {
 //line hello/hello_yap.gox:5:1
-		ctx.Json__1(map[string]string{"id": ctx.Param("id")})
+		ctx.Json__1(map[string]string{"id": ctx.Param("id"), "title": "hello", "author": "tsingbx"})
 	})
-//line hello/hello_yap.gox:14:1
+//line hello/hello_yap.gox:16:1
 	this.Run(":8000")
 }
 func main() {
-//line hello/hello_yap.gox:14:1
+//line hello/hello_yap.gox:16:1
 	yap.Gopt_App_Main(new(hello))
 }
