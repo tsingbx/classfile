@@ -1,0 +1,4 @@
+static "/pub", FS("public")
+static "/"
+
+run ":8080"

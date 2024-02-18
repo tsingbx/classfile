@@ -1,0 +1,7 @@
+var (
+	Width, Height int
+)
+
+func Area() int {
+	return Width * Height
+}
